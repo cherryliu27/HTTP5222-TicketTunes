@@ -1,0 +1,237 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+/* ------ STYLING FOR NAVBAR ------ */
+
+.navbar {
+  background-color: #040219; 
+  height: 4rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.navbar-overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#navbarNav{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbarlogo{
+  margin-left: 4rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navbarlogo, .navlink{
+  color: white;
+}
+
+.navlink{
+  margin-right: 4rem;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+.navbar-nav{
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 25rem;
+  background-image: url('./img/concert.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.herotext{
+  color: white;
+  text-align: center;
+  padding-top:1.5rem;
+}
+
+.homeh1{
+  font-weight:700;
+  font-size: 3rem;
+}
+
+.slogan{
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.heroKey{
+  font-weight: 800;
+}
+
+
+/* CONCERT SECTION */
+
+
+.concertSection{
+  padding-bottom: 2rem;
+  background: linear-gradient(
+    rgba(2, 0, 12, 0.7), 
+    rgba(2, 0, 12, 0.7)
+  ),
+  url('./img/homebkg.jpg');
+  background-size: cover;
+  background-position: center;
+  }
+
+
+.sectionHeading{
+    color: white;
+    font-weight: 700;
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+.headingColor{
+  color: #BB0052;
+}
+
+.section-desc{
+  margin-top: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.card-text{
+  margin: 0;
+}
+
+
+/* EVENT STYLING */
+.cardsection{
+  margin-top: 3rem;
+  }
+  
+.concert-card{
+  margin: auto;
+}
+  
+.concert-card-body-container{
+  display:flex;
+  align-items: center;
+}
+
+.transparent-card{
+  background-color: transparent;
+}
+
+.card-title, .card-text{
+  color: white;
+}
+
+.card-title{
+  font-size: 1.5rem;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.fill-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.eventBtns{
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.get-tickets{
+  background-color: #BB0052;
+  color: white;
+  width: 9rem;
+  border-radius: 3rem;
+}
+
+.get-tickets:hover{
+  background-color: #7c0036;
+  color: white;
+}
+
+.view-artist{
+  background-color: transparent;
+  border: #BB0052 solid 2px;
+  width: 8rem;
+  border-radius:3rem;
+  color: #BB0052
+}
+
+.view-artist:hover{
+  border: white solid 2px;
+  color: white;
+}
+
+
+
+/* TRACKS */
+.trackinfo{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  margin: 0.7rem 0;
+}
+
+.trackname, .trackname:visited{
+  padding:0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: white;
+  text-decoration: none;
+  padding-left:1rem;
+}
+
+.trackname:hover{
+  color:#BB0052
+}
+
+.trackplay, .track:visited{
+  color:#BB0052;
+  font-size: 0.7rem;
+}
+
+.trackplay:hover{
+  color:white;
+}
+
+
+#footer{
+  color: white;
+  background-color:#040219;
+  height: 2rem;
+  font-size: 0.8rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+

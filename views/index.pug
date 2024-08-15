@@ -1,0 +1,42 @@
+extends layout 
+
+
+block main-content 
+  //You can overwrite the main-content block by writing block content
+  //in the template file which is extending.
+  section.hero 
+    .herotext
+      h1.homeh1 TICKETTUNES
+      p.slogan Discover 
+        span.heroKey Concerts 
+        | and
+        br
+        | Tune In to Your 
+        span.heroKey Favorite Artists
+  section.concertSection
+    h2.sectionHeading UPCOMING 
+      span.headingColor CONCERTS
+    p.section-desc Explore Toronto's Top 20 Upcoming Concerts and Discover Top Tracks from Your Favorite Artists!
+    .cardsection 
+      each concert in events
+        .card.concert-card.transparent-card.mb-4.border-0(style="max-width: 900px;")
+          .row.g-0
+            .col-md-5.img-container
+              img.img-fluid.rounded.fill-image(src=concert.eventImg alt=concert.eventName)
+            .col-md-7.gx-5.concert-card-body-container
+              .card-body.concert-card-body
+                h5.card-title #{concert.eventName}
+                p.card-text Venue: #{concert.venue}
+                p.card-text Date: #{concert.date}
+                  each track in concert.tracks 
+                    div.trackinfo 
+                      img.trackimage.rounded(src=track.image, alt=track.name style="max-width:30px")
+                      a.trackname(href=track.link target='_blank' rel='noopener noreferrer') #{track.name}
+                .eventBtns
+                  a.btn.get-tickets(href=concert.sales target='_blank' rel='noopener noreferrer') Get Tickets
+                  a.btn.view-artist(href=concert.artistUrl target='_blank' rel='noopener noreferrer') View Artist
+
+
+
+  
+  
